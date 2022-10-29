@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    font-family: 'Kanit', sans-serif;
+} 
+.row{
+    display: flex;
+}
+.navbar{
+    position: fixed;
+    height: 71px;
+    width: 100%;
+    background-color: #000000;
+    z-index: 1;
+    }
+.nav-exp{
+    display: none;
+    color: #F8A4BD;
+    font-size:20px;
+    text-align: center;
+    padding-top: 15px;
+    height: 49px;
+    width: 64px;
+    border: 3px solid #F8A4BD;
+}
+.navimg{
+    width: 316px;
+    height: 70px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.navmenu{
+    height: 71;
+    width: 205px;
+    color: #F8A4BD;
+    font-size: 35px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #000000;
+}
+.navmenu:hover{
+    border: 3px solid #F8A4BD;
+    transition: 300ms;
+}
+.menu_tab{
+    color: #F8A4BD;
+    width: 296px;
+height: 70px;
+font-size: 35px;
+font-weight: bolder;
+margin: 20px;
+padding-top: 10px;
+text-align: center;
+background-color: #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 30px;}
+.mem{
+    width: 20%;
+    margin-left: 2.5%;
+margin-right: 2.5%;
+}
+.mem:hover{
+    transform: scale(1.1);
+    transition: 300ms;
+}
+.mem_pic{
+object-fit: cover;
+width: 100%;
+box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.mem_name{
+    width: 100%; 
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+.mem_gal{
+    width: 47%;
+    margin-left: 3%;
+    border-radius: 15px 0 0 15px;
+
+}
+.mem_about{
+    color: #F8A4BD;
+    font-size: 25px;
+    padding-left: 20px;
+    width: 47%;
+    margin-right: 3%;
+    background: #262525;
+    border-radius: 0 15px 15px 0;
+}
+.ro {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .co {
+    flex: 25%;
+    width: 50%;
+    padding: 0 4px;
+  }
+  
+  .co img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  .co img:hover{
+    transform: scale(1.5);
+    transition: 300ms;
+}
+  
+.card_al{
+    width: 30%;
+    height: 500px;
+    background: #262525;
+    border-radius: 15px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.card_al:hover{
+    transform: scale(1.05);
+    transition: 300ms;
+}
+.card_img{
+    object-fit: contain;
+    width: 100%;
+    height: 400px;
+    border-radius: 15px 15px 0 0;
+}
+.card_text{
+    text-align: center;
+    color: #F8A4BD;
+    font-size: 50px;
+    margin-top: 5px;
+    font-weight: 700;
+}
+.card_vi{
+    width: 45%;
+    height: 500px;
+    background: #262525;
+    border-radius: 15px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.yt{
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+.list_music{
+    width: 45%;
+    height: 500px;
+    background: #262525;
+    border-radius: 15px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.Music{
+    color: #ff5789;
+    font-size: 45px;
+    margin-top: 5px;
+    font-weight: 700;
+    margin-left: 15px;
+}
+.song_list{
+    color: #F8A4BD;
+    font-size: 35px;
+    margin-top: 5px;
+    font-weight: 500;
+    margin-left: 30px;
+    display: none;
+}
+.song_list>div:hover{
+    transform: scale(1.05);
+    transition: 300ms;
+}
+@media only screen and (max-width: 1000px) {
+    .card_text{
+        font-size: 35px;
+
+    }
+}
+@media only screen and (max-width: 600px) {
+    .row{
+        display: block;
+    }
+    .nav-exp{
+        display: block;
+    }
+    .menu_nav{
+        display: none;   
+    }
+    .navmenu{
+        margin-top: 0;
+        border: 2px solid #F8A4BD;
+    }
+    .mem{
+        width: 95%;
+        margin-left: 2.5%;
+    margin-right: 2.5%;
+    }
+    .mem_pic{
+        width: 95%;
+        margin-left: 2.5%;
+    margin-right: 2.5%;
+    }
+    .mem_name{
+        width: 100%; 
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+    }
+    .mem_gal{
+        width: 95%;
+        margin-left: 2.5%;
+    margin-right: 2.5%;
+    
+    }
+    .mem_about{
+        width: 95%;
+        margin-left: 2.5%;
+    margin-right: 2.5%;
+        border-radius: 15px 15px 15px 15px;
+    }
+    .card_al{
+        width: 95%;
+        margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 5px;
+    }
+    .card_img{
+        object-fit: contain;
+        width: 100%;
+        height: 400px;
+        border-radius: 15px 15px 0 0;
+    }
+    .card_text{
+        text-align: center;
+        color: #F8A4BD;
+        font-size: 35px;
+        margin-top: 5px;
+        font-weight: 700;
+    }
+    .card_vi{
+        width: 95%;
+        margin-left: 2.5%;
+    margin-right: 2.5%;
+    }
+    .yt{
+        object-fit: cover;
+        width: 100%;
+        height: 400px;
+    }
+    .list_music{
+        width: 95%;
+        margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: auto;
+    }
+    .Music{
+        color: #ff5789;
+        font-size: 45px;
+        margin-top: 5px;
+        font-weight: 700;
+        margin-left: 15px;
+    }
+    .song_list{
+        color: #F8A4BD;
+        font-size: 35px;
+        margin-top: 5px;
+        font-weight: 500;
+        margin-left: 15px;
+    }
+  }
