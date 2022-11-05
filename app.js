@@ -30,9 +30,10 @@ app.get('/',function(req,res) {
     res.sendFile(path.join(__dirname+'/index.html'));
   });
   app.use('/', router);
-  app.listen(process.env.port || 3000);
-  
-  console.log('Running at Port 3000');
+var port = process.env.PORT || 3000;
+app.listen(port, "0.0.0.0", function() {
+console.log("Listening on Port 3000");
+});
 // const hostname = '127.0.0.1';
 // const port = 3000;
 
